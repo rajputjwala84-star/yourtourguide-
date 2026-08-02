@@ -3,26 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Tour Guide - Explore the World</title>
+    <title>Your Tour Guide - Discover Your Next Adventure</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-    <header class="bg-indigo-700 text-white shadow-lg p-6 text-center">
-        <h1 class="text-4xl font-extrabold tracking-wide">YOUR TOUR GUIDE</h1>
-        <p class="text-indigo-200 mt-2">Aapka Personal Travel Companion & Guides</p>
+<body class="bg-gray-100 text-gray-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-indigo-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black tracking-wider flex items-center gap-2">
+                <i class="fa-solid fa-compass text-indigo-400"></i> YOUR TOUR GUIDE
+            </a>
+            <div class="hidden md:flex space-x-6 font-medium text-sm">
+                <a href="#" class="hover:text-indigo-300 transition">Home</a>
+                <a href="#" class="hover:text-indigo-300 transition">Destinations</a>
+                <a href="#" class="hover:text-indigo-300 transition">Budget Travel</a>
+                <a href="#" class="hover:text-indigo-300 transition">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-indigo-800 to-indigo-600 text-white py-16 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Explore The World With Us</h1>
+            <p class="text-indigo-200 text-lg mb-8">Aapka personal travel guide. Saste budget tips, hidden spots aur best itineraries ek hi jagah.</p>
+        </div>
     </header>
 
-    <main class="max-w-4xl mx-auto my-10 px-4">
-        <section id="posts" class="space-y-6">
-            <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-indigo-600">
-                <h2 class="text-2xl font-bold text-gray-900">Welcome to Your Tour Guide!</h2>
-                <p class="text-gray-600 mt-2">Humari travel community mein aapka swagat hai. Yahan aapko milenge best travel guides, budget tips, aur hidden places ki jankari!</p>
-            </div>
+    <!-- Main Content Grid -->
+    <main class="max-w-6xl mx-auto my-12 px-4">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3">Latest Travel Stories</h2>
+        </div>
+
+        <!-- Posts Grid -->
+        <section id="posts-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Sample Card 1 -->
+            <article class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80" alt="Mountain Travel" class="w-full h-48 object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">Mountains</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-3 hover:text-indigo-600 transition">Kedarnath Yatra Complete Guide</h3>
+                        <p class="text-gray-600 text-sm mt-2 line-clamp-3">Kam budget me Kedarnath kaise jayein? Stay, food aur route details ki poori jankari.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
+                        <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+                        <a href="#" class="text-indigo-600 font-bold hover:underline">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sample Card 2 -->
+            <article class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=600&q=80" alt="Beach Travel" class="w-full h-48 object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">Budget Tips</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-3 hover:text-indigo-600 transition">Goa Trip Under ₹5,000</h3>
+                        <p class="text-gray-600 text-sm mt-2 line-clamp-3">North Goa vs South Goa - hostel booking, scooty rent aur cheap food places list.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
+                        <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+                        <a href="#" class="text-indigo-600 font-bold hover:underline">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
         </section>
     </main>
 
-    <footer class="text-center p-6 bg-gray-200 text-gray-600 text-sm mt-12">
-        © 2026 Your Tour Guide. All rights reserved.
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 border-t border-gray-800 mt-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-lg font-semibold text-white mb-2">Your Tour Guide</p>
+            <p class="text-sm text-gray-500 mb-6">Aapke travel sapno ko aasan banane ke liye.</p>
+            <p class="text-xs text-gray-600">© 2026 Your Tour Guide. All rights reserved.</p>
+        </div>
     </footer>
+
 </body>
 </html>
