@@ -9,17 +9,15 @@
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans antialiased">
 
-    <!-- Navbar -->
+    <!-- Navbar (Only Home & Posts on top) -->
     <nav class="bg-indigo-900 text-white sticky top-0 z-50 shadow-md">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <a href="index.html" class="text-xl md:text-2xl font-black tracking-wider flex items-center gap-2">
                 <i class="fa-solid fa-compass text-indigo-400"></i> YOUR TOUR GUIDE
             </a>
-            <div class="flex space-x-6 text-sm md:text-base font-medium">
+            <div class="flex space-x-6 text-sm md:text-base font-semibold">
                 <a href="index.html" class="hover:text-indigo-300 transition">Home</a>
-                <a href="#posts" class="hover:text-indigo-300 transition mr-2">Posts</a>
-                <a href="#about" class="hover:text-indigo-300 transition">About</a>
-                <a href="contact.html" class="hover:text-indigo-300 transition">Contact</a>
+                <a href="#posts" class="hover:text-indigo-300 transition">Posts</a>
             </div>
         </div>
     </nav>
@@ -39,10 +37,10 @@
         </div>
     </header>
 
-    <!-- Main Content Layout (Grid: Left Posts, Right Sidebar for About & Contact) -->
+    <!-- Main Content Layout -->
     <main class="max-w-6xl mx-auto my-10 px-4 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-        <!-- Left Side: Posts Section (Takes 2 columns) -->
+        <!-- Left Side: Posts Section -->
         <section id="posts" class="lg:col-span-2 space-y-6">
             <h2 class="text-2xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3">Latest Travel Stories</h2>
             <div id="posts-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -82,10 +80,10 @@
             </div>
         </section>
 
-        <!-- Right Side: About & Contact Sidebar (1 column, stacked one below the other) -->
+        <!-- Right Side / Below: About & Contact Sections -->
         <aside class="space-y-6">
             
-            <!-- About Us Widget -->
+            <!-- About Us -->
             <section id="about" class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <h2 class="text-xl font-bold text-gray-900 mb-3 border-l-4 border-indigo-600 pl-3">About Us</h2>
                 <p class="text-gray-600 text-xs leading-relaxed">
@@ -93,9 +91,9 @@
                 </p>
             </section>
 
-            <!-- Quick Contact / WhatsApp Widget -->
+            <!-- Quick Contact / WhatsApp -->
             <section id="contact-widget" class="bg-indigo-50 rounded-2xl p-6 shadow-sm border border-indigo-100">
-                <h3 class="text-lg font-bold text-gray-900 mb-2">Quick Contact</h3>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Contact Us</h3>
                 <p class="text-xs text-gray-600 mb-4">Koi query ho toh humse direct WhatsApp par baat karein ya full contact page par jayein:</p>
                 
                 <a href="https://wa.me/918439961703" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2.5 px-4 rounded-lg text-xs transition shadow-md mb-3">
