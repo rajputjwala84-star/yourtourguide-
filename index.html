@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans antialiased">
 
-    <!-- Navbar (Fixed Responsive Spacing) -->
+    <!-- Navbar -->
     <nav class="bg-slate-900 text-white sticky top-0 z-50 shadow-lg border-b border-slate-800">
         <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-3">
             
@@ -80,18 +80,22 @@
 
                 <div id="posts-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     
-                    <!-- Card 1 -->
+                    <!-- Card 1 (Direct Linked to kedarnath-guide.html) -->
                     <article class="post-card bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-gray-200/70 flex flex-col">
-                        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80" alt="Mountain Travel" class="w-full h-44 object-cover">
+                        <a href="kedarnath-guide.html">
+                            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80" alt="Mountain Travel" class="w-full h-44 object-cover">
+                        </a>
                         <div class="p-5 flex-1 flex flex-col justify-between">
                             <div>
                                 <span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-[11px] font-bold px-2.5 py-0.5 rounded-full inline-block">Mountains</span>
-                                <h3 class="post-title text-base sm:text-lg font-bold text-gray-900 mt-2.5 hover:text-indigo-600 transition leading-snug">Kedarnath Yatra Complete Guide</h3>
+                                <h3 class="post-title text-base sm:text-lg font-bold text-gray-900 mt-2.5 hover:text-indigo-600 transition leading-snug">
+                                    <a href="kedarnath-guide.html">Kedarnath Yatra Complete Guide</a>
+                                </h3>
                                 <p class="text-gray-600 text-xs mt-1.5 leading-relaxed line-clamp-2">Kam budget me Kedarnath kaise jayein? Stay, food aur route details ki poori jankari.</p>
                             </div>
                             <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
                                 <span><i class="fa-regular fa-clock"></i> 5 min read</span>
-                                <a href="#" class="text-indigo-600 font-bold hover:underline">Read More →</a>
+                                <a href="kedarnath-guide.html" class="text-indigo-600 font-bold hover:underline">Read More →</a>
                             </div>
                         </div>
                     </article>
@@ -107,7 +111,7 @@
                             </div>
                             <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
                                 <span><i class="fa-regular fa-clock"></i> 4 min read</span>
-                                <a href="#" class="text-indigo-600 font-bold hover:underline">Read More →</a>
+                                <a href="contact.html" class="text-indigo-600 font-bold hover:underline">Read More →</a>
                             </div>
                         </div>
                     </article>
@@ -145,44 +149,43 @@
             </aside>
         </div>
 
-        <!-- Photo Gallery Section (Fixed Stable Image URLs) -->
+        <!-- Photo Gallery Section -->
         <section id="gallery" class="pt-6 border-t border-gray-200">
             <div class="flex items-center justify-between mb-6">
                 <h2 class="text-xl sm:text-2xl font-bold text-gray-900 flex items-center gap-2">
                     <span class="w-2.5 h-6 bg-indigo-600 rounded-full inline-block"></span>
                     Travel Snapshots
                 </h2>
-                <span class="text-xs text-gray-500 font-medium">Click photo to view full size</span>
+                <span class="text-xs text-gray-500 font-medium"><i class="fa-solid fa-expand text-indigo-500 mr-1"></i> Tap photo to view</span>
             </div>
 
-            <!-- Gallery Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 
-                <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-sm border border-gray-100" onclick="openLightbox('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80', 'Himalayan Sunrise')">
-                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=500&q=80" alt="Himalayas" class="w-full h-36 sm:h-44 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
-                        <span class="text-white text-xs font-semibold"><i class="fa-solid fa-location-dot text-indigo-400 mr-1"></i> Himalayas</span>
+                <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-md border border-gray-200/80 bg-gray-900" onclick="openLightbox('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80', 'Himalayas, Uttarakhand')">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Himalayas" class="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-90 sm:opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+                        <span class="text-white text-xs font-bold tracking-wide flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-indigo-400"></i> Himalayas</span>
                     </div>
                 </div>
 
-                <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-sm border border-gray-100" onclick="openLightbox('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80', 'Goa Beach Sunset')">
-                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Goa Beach" class="w-full h-36 sm:h-44 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
-                        <span class="text-white text-xs font-semibold"><i class="fa-solid fa-location-dot text-emerald-400 mr-1"></i> Goa Beach</span>
+                <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-md border border-gray-200/80 bg-gray-900" onclick="openLightbox('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80', 'Beach Sunset, Goa')">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Goa Beach" class="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-90 sm:opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+                        <span class="text-white text-xs font-bold tracking-wide flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-emerald-400"></i> Goa Beach</span>
                     </div>
                 </div>
 
-                <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-sm border border-gray-100" onclick="openLightbox('https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=1200&q=80', 'Camping in Valley')">
-                    <img src="https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=500&q=80" alt="Camping" class="w-full h-36 sm:h-44 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
-                        <span class="text-white text-xs font-semibold"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i> Camping Night</span>
+                <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-md border border-gray-200/80 bg-gray-900" onclick="openLightbox('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1200&q=80', 'Night Camping, Himachal')">
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=600&q=80" alt="Camping" class="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-90 sm:opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+                        <span class="text-white text-xs font-bold tracking-wide flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-amber-400"></i> Camping Night</span>
                     </div>
                 </div>
 
-                <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-sm border border-gray-100" onclick="openLightbox('https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80', 'Backwaters Ride')">
-                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=500&q=80" alt="Travel Landscape" class="w-full h-36 sm:h-44 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
-                        <span class="text-white text-xs font-semibold"><i class="fa-solid fa-location-dot text-cyan-400 mr-1"></i> Scenic Trails</span>
+                <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-md border border-gray-200/80 bg-gray-900" onclick="openLightbox('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80', 'Alleppey Backwaters, Kerala')">
+                    <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=600&q=80" alt="Kerala Backwaters" class="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-90 sm:opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
+                        <span class="text-white text-xs font-bold tracking-wide flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-cyan-400"></i> Kerala Backwaters</span>
                     </div>
                 </div>
 
@@ -193,11 +196,11 @@
 
     <!-- Full-Screen Lightbox Modal -->
     <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex-col items-center justify-center p-4 backdrop-blur-md">
-        <button onclick="closeLightbox()" class="absolute top-5 right-5 text-white text-2xl hover:text-indigo-400 transition">
+        <button onclick="closeLightbox()" class="absolute top-5 right-5 text-white text-2xl hover:text-indigo-400 transition bg-slate-800/80 w-10 h-10 rounded-full flex items-center justify-center border border-slate-700">
             <i class="fa-solid fa-xmark"></i>
         </button>
-        <img id="lightbox-img" src="" class="max-w-full max-h-[80vh] rounded-2xl shadow-2xl object-contain">
-        <p id="lightbox-caption" class="text-white text-sm font-semibold mt-4 bg-slate-800/80 px-4 py-2 rounded-full border border-slate-700"></p>
+        <img id="lightbox-img" src="" class="max-w-full max-h-[75vh] rounded-2xl shadow-2xl object-contain border border-slate-800">
+        <p id="lightbox-caption" class="text-white text-xs sm:text-sm font-semibold mt-4 bg-slate-900/90 px-5 py-2 rounded-full border border-slate-700 tracking-wide"></p>
     </div>
 
     <!-- Footer -->
