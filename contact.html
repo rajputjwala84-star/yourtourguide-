@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Your Tour Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Navbar -->
+    <nav class="bg-indigo-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-black tracking-wider flex items-center gap-2">
+                <i class="fa-solid fa-compass text-indigo-400"></i> YOUR TOUR GUIDE
+            </a>
+            <div class="flex space-x-4 md:space-x-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-indigo-300 transition">Home</a>
+                <a href="index.html#posts" class="hover:text-indigo-300 transition">Posts</a>
+                <a href="index.html#about" class="hover:text-indigo-300 transition">About</a>
+                <a href="contact.html" class="text-indigo-300 font-bold border-b-2 border-indigo-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto my-10 px-4 w-full">
+        <div class="bg-white rounded-2xl p-6 md:p-10 shadow-sm border border-gray-100">
+            <h1 class="text-3xl font-extrabold text-gray-900 mb-2 border-l-4 border-indigo-600 pl-3">Get in Touch</h1>
+            <p class="text-gray-500 text-sm mb-8">Aapki koi query ho ya travel suggestion, humse contact karein.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Form -->
+                <form action="https://formspree.io/f/mvzeezen" method="POST" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Your Name</label>
+                        <input type="text" name="name" required placeholder="Aapka Naam" class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Email Address</label>
+                        <input type="email" name="email" required placeholder="Aapka Email ID" class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Message</label>
+                        <textarea name="message" rows="4" required placeholder="Apna message yahan likhein..." class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-indigo-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg text-sm hover:bg-indigo-700 transition">Send Message</button>
+                </form>
+
+                <!-- Direct Connect -->
+                <div class="flex flex-col justify-center bg-indigo-50 p-6 rounded-xl border border-indigo-100 space-y-4">
+                    <h3 class="text-lg font-bold text-gray-900">Direct Connect</h3>
+                    <p class="text-sm text-gray-600">Quick response ke liye WhatsApp par chat karein:</p>
+                    
+                    <a href="https://wa.me/918439961703" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-4 rounded-lg transition shadow-md">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Chat on WhatsApp
+                    </a>
+
+                    <div class="pt-4 border-t border-indigo-200 text-xs text-gray-500">
+                        Instagram aur Facebook links jaldi hi add kiye jayenge!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-lg font-semibold text-white mb-1">Your Tour Guide</p>
+            <p class="text-sm text-gray-500 mb-4">Aapke travel sapno ko aasan banane ke liye.</p>
+            <p class="text-xs text-gray-600">© 2026 Your Tour Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
