@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Tour Guide - Discover Your Next Adventure</title>
+    <title>Your Tour Guide - Offbeat Travel Destinations</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BM194YWKE"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -14,247 +15,32 @@
       gtag('config', 'G-9BM194YWKE');
     </script>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans antialiased">
-
-    <!-- Navbar -->
-    <nav class="bg-slate-900 text-white sticky top-0 z-50 shadow-lg border-b border-slate-800">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-3">
-            
-            <a href="index.html" class="flex items-center gap-2 text-sm sm:text-xl font-extrabold tracking-tight hover:opacity-90 transition">
-                <div class="bg-indigo-600 text-white p-2 rounded-xl flex items-center justify-center shadow-md">
-                    <i class="fa-solid fa-compass text-sm sm:text-lg"></i>
-                </div>
-                <span class="bg-gradient-to-r from-white via-slate-200 to-indigo-300 bg-clip-text text-transparent uppercase font-black">
-                    Your Tour Guide
-                </span>
-            </a>
-
-            <div class="flex items-center space-x-1.5 sm:space-x-3 text-xs sm:text-sm font-semibold">
-                <a href="index.html" class="bg-slate-800 hover:bg-slate-700 text-slate-100 px-3 py-1.5 rounded-lg border border-slate-700/60 transition">
-                    Home
-                </a>
-                <a href="#posts" class="hover:text-indigo-400 px-2 py-1.5 text-slate-300 transition">
-                    Posts
-                </a>
-                <a href="#gallery" class="hover:text-indigo-400 px-2 py-1.5 text-slate-300 transition">
-                    Gallery
-                </a>
-            </div>
-
+<body class="bg-slate-50 text-slate-800">
+    <nav class="bg-slate-900 text-white p-4 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl text-emerald-400"><i class="fa-solid fa-compass mr-2"></i>Your Tour Guide</a>
         </div>
     </nav>
 
-    <!-- Custom Hero Section -->
-    <header class="relative bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-900 text-white py-12 sm:py-16 px-4 text-center overflow-hidden border-b border-indigo-900/50 shadow-inner">
-        <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
-        
-        <div class="relative max-w-3xl mx-auto space-y-4">
-            <span class="inline-flex items-center gap-1.5 bg-indigo-500/10 text-indigo-300 border border-indigo-500/30 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
-                <i class="fa-solid fa-sparkles text-indigo-400"></i> Explore Without Limits
-            </span>
-            
-            <h1 class="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight text-white">
-                Discover Your Next <span class="text-indigo-400">Adventure</span>
-            </h1>
-            
-            <p class="text-slate-300 text-xs sm:text-base max-w-xl mx-auto leading-relaxed">
-                Aapka personal travel guide. Budget tips, hidden spots aur real travel itineraries.
-            </p>
-            
-            <div class="max-w-md mx-auto pt-2">
-                <div class="relative flex items-center">
-                    <i class="fa-solid fa-magnifying-glass absolute left-4 text-slate-400 text-sm"></i>
-                    <input type="text" id="searchInput" onkeyup="searchPosts()" 
-                           placeholder="Search (e.g. Kedarnath, Goa)..." 
-                           class="w-full py-3 pl-11 pr-4 bg-slate-950/80 text-white placeholder-slate-400 border border-slate-700/80 rounded-2xl shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 text-xs sm:text-sm backdrop-blur-md transition">
-                </div>
-            </div>
-        </div>
+    <header class="bg-slate-800 text-white py-12 px-4 text-center">
+        <h1 class="text-3xl md:text-4xl font-bold">Discover Hidden Travel Gems</h1>
+        <p class="text-slate-300 mt-2 text-sm max-w-xl mx-auto">Explore offbeat destinations, local secrets, and customized travel itineraries.</p>
     </header>
 
-    <!-- Main Content Grid -->
-    <main class="max-w-6xl mx-auto my-8 sm:my-12 px-4 space-y-12">
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Left Side: Posts Section -->
-            <section id="posts" class="lg:col-span-2 space-y-6">
-                <div class="flex items-center justify-between border-b border-gray-200 pb-3">
-                    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 flex items-center gap-2">
-                        <span class="w-2.5 h-6 bg-indigo-600 rounded-full inline-block"></span>
-                        Latest Travel Stories
-                    </h2>
-                </div>
-
-                <div id="posts-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    
-                    <!-- Card 1 (Direct Linked to kedarnath-guide.html) -->
-                    <article class="post-card bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-gray-200/70 flex flex-col">
-                        <a href="kedarnath-guide.html">
-                            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80" alt="Mountain Travel" class="w-full h-44 object-cover">
-                        </a>
-                        <div class="p-5 flex-1 flex flex-col justify-between">
-                            <div>
-                                <span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-[11px] font-bold px-2.5 py-0.5 rounded-full inline-block">Mountains</span>
-                                <h3 class="post-title text-base sm:text-lg font-bold text-gray-900 mt-2.5 hover:text-indigo-600 transition leading-snug">
-                                    <a href="kedarnath-guide.html">Kedarnath Yatra Complete Guide</a>
-                                </h3>
-                                <p class="text-gray-600 text-xs mt-1.5 leading-relaxed line-clamp-2">Kam budget me Kedarnath kaise jayein? Stay, food aur route details ki poori jankari.</p>
-                            </div>
-                            <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
-                                <span><i class="fa-regular fa-clock"></i> 5 min read</span>
-                                <a href="kedarnath-guide.html" class="text-indigo-600 font-bold hover:underline">Read More →</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Card 2 -->
-                    <article class="post-card bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-gray-200/70 flex flex-col">
-                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=600&q=80" alt="Beach Travel" class="w-full h-44 object-cover">
-                        <div class="p-5 flex-1 flex flex-col justify-between">
-                            <div>
-                                <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-[11px] font-bold px-2.5 py-0.5 rounded-full inline-block">Budget Tips</span>
-                                <h3 class="post-title text-base sm:text-lg font-bold text-gray-900 mt-2.5 hover:text-indigo-600 transition leading-snug">Goa Trip Under ₹5,000</h3>
-                                <p class="text-gray-600 text-xs mt-1.5 leading-relaxed line-clamp-2">North Goa vs South Goa - hostel booking, scooty rent aur cheap food places list.</p>
-                            </div>
-                            <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
-                                <span><i class="fa-regular fa-clock"></i> 4 min read</span>
-                                <a href="contact.html" class="text-indigo-600 font-bold hover:underline">Read More →</a>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </section>
-
-            <!-- Right Side: Sidebar -->
-            <aside class="space-y-6">
-                <!-- About Us -->
-                <section id="about" class="bg-white rounded-2xl p-5 shadow-sm border border-gray-200/70">
-                    <h3 class="text-base font-bold text-gray-900 mb-2 flex items-center gap-2">
-                        <i class="fa-solid fa-circle-info text-indigo-600"></i> About Us
-                    </h3>
-                    <p class="text-gray-600 text-xs leading-relaxed">
-                        Welcome to <strong>Your Tour Guide</strong>! Yahan hum real aur low-budget travel experiences, hidden places aur local food spots share karte hain.
-                    </p>
-                </section>
-
-                <!-- Quick Contact -->
-                <section id="contact-widget" class="bg-slate-900 text-white rounded-2xl p-5 shadow-md border border-slate-800">
-                    <h3 class="text-base font-bold mb-1 flex items-center gap-2">
-                        <i class="fa-solid fa-paper-plane text-indigo-400"></i> Contact Us
-                    </h3>
-                    <p class="text-slate-400 text-xs mb-4">Koi query ho toh humse direct WhatsApp par baat karein ya contact page dekhein:</p>
-                    
-                    <a href="https://wa.me/918439961703" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-md mb-2.5">
-                        <i class="fa-brands fa-whatsapp text-base"></i> Chat on WhatsApp
-                    </a>
-                    
-                    <a href="contact.html" class="block text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition">
-                        Open Contact Page →
-                    </a>
-                </section>
-            </aside>
+    <main class="max-w-3xl mx-auto p-4 space-y-6 my-6">
+        <!-- Meghalaya Guide Card -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-100 hover:shadow-lg transition">
+            <div class="p-5">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-full uppercase">Hidden Paradise</span>
+                <h3 class="text-xl font-bold text-slate-800 mt-2">Complete Meghalaya Travel Guide</h3>
+                <p class="text-slate-600 text-sm mt-1">Living Root Bridges, crystal clear rivers, and cloud-covered valleys.</p>
+                <a href="meghalaya-guide.html" class="inline-block mt-4 text-emerald-600 font-semibold hover:underline">Read Full Guide &rarr;</a>
+            </div>
         </div>
-
-        <!-- Photo Gallery Section -->
-        <section id="gallery" class="pt-6 border-t border-gray-200">
-            <div class="flex items-center justify-between mb-6">
-                <h2 class="text-xl sm:text-2xl font-bold text-gray-900 flex items-center gap-2">
-                    <span class="w-2.5 h-6 bg-indigo-600 rounded-full inline-block"></span>
-                    Travel Snapshots
-                </h2>
-                <span class="text-xs text-gray-500 font-medium"><i class="fa-solid fa-expand text-indigo-500 mr-1"></i> Tap photo to view</span>
-            </div>
-
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                
-                <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-md border border-gray-200/80 bg-gray-900" onclick="openLightbox('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80', 'Himalayas, Uttarakhand')">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Himalayas" class="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-90 sm:opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
-                        <span class="text-white text-xs font-bold tracking-wide flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-indigo-400"></i> Himalayas</span>
-                    </div>
-                </div>
-
-                <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-md border border-gray-200/80 bg-gray-900" onclick="openLightbox('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80', 'Beach Sunset, Goa')">
-                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Goa Beach" class="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-90 sm:opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
-                        <span class="text-white text-xs font-bold tracking-wide flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-emerald-400"></i> Goa Beach</span>
-                    </div>
-                </div>
-
-                <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-md border border-gray-200/80 bg-gray-900" onclick="openLightbox('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1200&q=80', 'Night Camping, Himachal')">
-                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=600&q=80" alt="Camping" class="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-90 sm:opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
-                        <span class="text-white text-xs font-bold tracking-wide flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-amber-400"></i> Camping Night</span>
-                    </div>
-                </div>
-
-                <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-md border border-gray-200/80 bg-gray-900" onclick="openLightbox('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80', 'Alleppey Backwaters, Kerala')">
-                    <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=600&q=80" alt="Kerala Backwaters" class="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-90 sm:opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
-                        <span class="text-white text-xs font-bold tracking-wide flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-cyan-400"></i> Kerala Backwaters</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-<div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition mb-6">
-    <div class="p-5">
-        <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-full">Hidden Paradise</span>
-        <h3 class="text-xl font-bold text-slate-800 mt-2">Complete Meghalaya Travel Guide</h3>
-        <p class="text-slate-600 text-sm mt-1">Living Root Bridges, crystal clear rivers, and cloud-covered valleys.</p>
-        <a href="meghalaya-guide.html" class="inline-block mt-4 text-emerald-600 font-semibold hover:underline">Read Full Guide &rarr;</a>
-    </div>
-</div>
     </main>
 
-    <!-- Full-Screen Lightbox Modal -->
-    <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex-col items-center justify-center p-4 backdrop-blur-md">
-        <button onclick="closeLightbox()" class="absolute top-5 right-5 text-white text-2xl hover:text-indigo-400 transition bg-slate-800/80 w-10 h-10 rounded-full flex items-center justify-center border border-slate-700">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-        <img id="lightbox-img" src="" class="max-w-full max-h-[75vh] rounded-2xl shadow-2xl object-contain border border-slate-800">
-        <p id="lightbox-caption" class="text-white text-xs sm:text-sm font-semibold mt-4 bg-slate-900/90 px-5 py-2 rounded-full border border-slate-700 tracking-wide"></p>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-900">
-        <div class="max-w-6xl mx-auto px-4 text-center space-y-2">
-            <p class="text-base font-bold text-white tracking-wide uppercase">Your Tour Guide</p>
-            <p class="text-xs text-slate-400">Aapke travel sapno ko aasan banane ke liye.</p>
-            <p class="text-[11px] text-slate-600 pt-2">© 2026 Your Tour Guide. All rights reserved.</p>
-        </div>
+    <footer class="bg-slate-900 text-slate-400 text-center py-6 text-xs border-t border-slate-800">
+        <p>&copy; 2026 Your Tour Guide. All rights reserved.</p>
     </footer>
-
-    <!-- JavaScript Scripts -->
-    <script>
-        function searchPosts() {
-            let input = document.getElementById('searchInput').value.toLowerCase();
-            let cards = document.getElementsByClassName('post-card');
-            
-            for (let card of cards) {
-                let title = card.querySelector('.post-title').innerText.toLowerCase();
-                if (title.includes(input)) {
-                    card.style.display = "flex";
-                } else {
-                    card.style.display = "none";
-                }
-            }
-        }
-
-        function openLightbox(imgUrl, caption) {
-            document.getElementById('lightbox-img').src = imgUrl;
-            document.getElementById('lightbox-caption').innerText = caption;
-            document.getElementById('lightbox').classList.remove('hidden');
-            document.getElementById('lightbox').classList.add('flex');
-        }
-
-        function closeLightbox() {
-            document.getElementById('lightbox').classList.add('hidden');
-            document.getElementById('lightbox').classList.remove('flex');
-        }
-    </script>
-
 </body>
 </html>
